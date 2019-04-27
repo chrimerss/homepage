@@ -155,6 +155,21 @@ canvas {
   right: 20px;
 }
 
+.posts-link-post,
+.projects-link-post {
+  position: absolute;
+  top: 73px;
+  font-size: 12px;
+  color: darken($white, 40);
+}
+
+.posts-link-post {
+  right: 90px;
+}
+.projects-link-post {
+  right: 20px;
+}
+
 .overlay {
   position: fixed;
   background: $overlay-color;
@@ -296,7 +311,7 @@ canvas {
 
 .main-info,
 .about-info {
-  
+
   max-width: 400px;
   width: 100%;
   margin: 0 auto;
@@ -442,12 +457,13 @@ canvas {
 }
 
 #posts {
-  .block-right {
+
+  .post-block {
+    block-size: 800px;
     display: block;
     .content {
       height: auto;
       display: block;
-      max-width: 800px;
     }
   }
   .logo {
@@ -482,7 +498,9 @@ canvas {
 }
 
 .posts-list {
-  margin: 50px 0;
+  margin: 200px 0;
+  padding-left: 50px;
+  padding-right: 100px;
   > li {
     margin-bottom: 23px;
     padding-bottom: 20px;
@@ -517,6 +535,7 @@ canvas {
   .tags li > a {
     color: lighten($black, 28%);
   }
+
 }
 
 .tags {
@@ -532,6 +551,17 @@ canvas {
       color: $white;
     }
   }
+}
+
+.post-block {
+  margin-top: 100px;
+  padding-left: 50px;
+  padding-right: 100px;
+  overflow: scroll;
+  height: 100%;
+  margin-right: 50px;
+
+
 }
 
 .inner-post {
@@ -785,7 +815,7 @@ canvas {
     height: 50% !important;
   }
   .content {
-    padding: 20px
+    padding: 20px;
   }
 }
 
