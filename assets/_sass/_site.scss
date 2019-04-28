@@ -293,6 +293,13 @@ canvas {
         -o-transition: all 0.5s;
         transition: all 0.5s;
       }
+        &:hover {
+    border-color: $green;
+    &:before,
+    &:after {
+      border-color: $green;
+    }
+  }
     }
   }
 }
@@ -466,6 +473,16 @@ canvas {
       display: block;
     }
   }
+  .block-left {
+  max-width: 500px;
+  }
+  .block-right {
+  max-width: 700px;
+  padding-left:50px;
+    .inner-post content {
+    max-width:700px;
+    }
+  }
   .logo {
     color:lighten;
     top: 20px;
@@ -557,6 +574,7 @@ canvas {
   margin-top: 100px;
   padding-left: 50px;
   padding-right: 100px;
+  padding-bottom: 50px;
   overflow: scroll;
   height: 100%;
   margin-right: 50px;

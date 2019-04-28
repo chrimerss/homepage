@@ -1,33 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.2">Jekyll</generator><link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000//" rel="alternate" type="text/html" /><updated>2019-04-27T23:56:21+08:00</updated><id>http://127.0.0.1:4000//</id><title>(Allen) Zhi Li</title><subtitle>Data Scientist @ Hydroinformatics Institute</subtitle><entry><title>Rainfall Camera</title><link href="http://127.0.0.1:4000//post/" rel="alternate" type="text/html" title="Rainfall Camera" /><published>2019-04-27T00:00:00+08:00</published><updated>2019-04-27T00:00:00+08:00</updated><id>http://127.0.0.1:4000//post</id><content type="html" xml:base="http://127.0.0.1:4000//post/">&lt;h1 id=&quot;rainfall-camera&quot;&gt;Rainfall Camera&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.2">Jekyll</generator><link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000//" rel="alternate" type="text/html" /><updated>2019-04-28T12:15:08+08:00</updated><id>http://127.0.0.1:4000//</id><title>(Allen) Zhi Li</title><subtitle>Data Scientist @ Hydroinformatics Institute</subtitle><entry><title>Rainfall Camera</title><link href="http://127.0.0.1:4000//post/" rel="alternate" type="text/html" title="Rainfall Camera" /><published>2019-04-27T00:00:00+08:00</published><updated>2019-04-27T00:00:00+08:00</updated><id>http://127.0.0.1:4000//post</id><content type="html" xml:base="http://127.0.0.1:4000//post/">&lt;h1 id=&quot;rainfall-camera&quot;&gt;Rainfall Camera&lt;/h1&gt;
 &lt;hr /&gt;
 
-&lt;figure&gt;
-&lt;img align=&quot;right&quot; src=&quot;images/h2i_header.jpg&quot; width=&quot;40%&quot; /&gt;
-&lt;img align=&quot;center&quot; src=&quot;images/Singapore.PNG&quot; width=&quot;100%&quot; /&gt;
+&lt;figure style=&quot;width: 80%&quot; class=&quot;align-center&quot;&gt;
+&lt;img align=&quot;center&quot; src=&quot;http://127.0.0.1:4000//images/Singapore.PNG&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&quot;contents&quot;&gt;&lt;em&gt;Contents&lt;/em&gt;&lt;/h2&gt;
 
 &lt;h3 id=&quot;introductionintroduction&quot;&gt;1. &lt;a href=&quot;#introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;### 2. &lt;a href=&quot;#classifier&quot;&gt;Classifier&lt;/a&gt;
-### 3. &lt;a href=&quot;#normal&quot;&gt;Normal Rainfall Processing&lt;/a&gt;
-#### 3.1 &lt;a href=&quot;#description&quot;&gt;Model Description&lt;/a&gt;
-#### 3.2 &lt;a href=&quot;#efficiency&quot;&gt;Model Efficiency&lt;/a&gt;
-### 4. &lt;a href=&quot;#heavy&quot;&gt;Heavy Rainfall Processing&lt;/a&gt;
-### 5. &lt;a href=&quot;#night&quot;&gt;Night Image Processing&lt;/a&gt;
-### 6. &lt;a href=&quot;#validation&quot;&gt;Validation&lt;/a&gt;
-### 7. &lt;a href=&quot;#reference&quot;&gt;Reference&lt;/a&gt;
-### 8. &lt;a href=&quot;#misc&quot;&gt;Misc&lt;/a&gt;
-#### 8.1 &lt;a href=&quot;#demo&quot;&gt;Demo&lt;/a&gt;
-#### 8.2 &lt;a href=&quot;#todo&quot;&gt;To-do List&lt;/a&gt;
-#### 8.3 &lt;a href=&quot;#update&quot;&gt;Updates&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;classifierclassifier&quot;&gt;2. &lt;a href=&quot;#classifier&quot;&gt;Classifier&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;normal-rainfall-processingnormal&quot;&gt;3. &lt;a href=&quot;#normal&quot;&gt;Normal Rainfall Processing&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;model-descriptiondescription&quot;&gt;3.1 &lt;a href=&quot;#description&quot;&gt;Model Description&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;model-efficiencyefficiency&quot;&gt;3.2 &lt;a href=&quot;#efficiency&quot;&gt;Model Efficiency&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h3 id=&quot;heavy-rainfall-processingheavy&quot;&gt;4. &lt;a href=&quot;#heavy&quot;&gt;Heavy Rainfall Processing&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;night-image-processingnight&quot;&gt;5. &lt;a href=&quot;#night&quot;&gt;Night Image Processing&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;validationvalidation&quot;&gt;6. &lt;a href=&quot;#validation&quot;&gt;Validation&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;referencereference&quot;&gt;7. &lt;a href=&quot;#reference&quot;&gt;Reference&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;miscmisc&quot;&gt;8. &lt;a href=&quot;#misc&quot;&gt;Misc&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;demodemo&quot;&gt;8.1 &lt;a href=&quot;#demo&quot;&gt;Demo&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;to-do-listtodo&quot;&gt;8.2 &lt;a href=&quot;#todo&quot;&gt;To-do List&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;updatesupdate&quot;&gt;8.3 &lt;a href=&quot;#update&quot;&gt;Updates&lt;/a&gt;&lt;/h4&gt;
 
 &lt;h2 id=&quot;introductiona-nameintroductiona&quot;&gt;&lt;em&gt;Introduction&lt;/em&gt;&lt;a name=&quot;introduction&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
 
-&lt;p align=&quot;center&quot;&gt;
-  &lt;img height=&quot;50%&quot; width=&quot;50%&quot; src=&quot;images/Flowchart.png&quot; /&gt;&lt;br /&gt;
-   Fig.1 Flow Chart of Rainfall Camera
-&lt;/p&gt;
+&lt;figure style=&quot;width: 40%&quot; class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;http://127.0.0.1:4000//images/Flowchart.png&quot; /&gt;
+  &lt;figcaption&gt;Fig.1 Flow Chart of Rainfall Camera&lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;classifiera-nameclassifiera&quot;&gt;&lt;em&gt;Classifier&lt;/em&gt;&lt;a name=&quot;classifier&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
 
@@ -70,19 +82,19 @@
 &lt;p&gt;Follow the pipeline, we emphisize on how to extract the rainfall intensity. In this method we describe, we feed the classified rainy image denoted as R into 4 times pretrained recurrent neuron network to get the original de-rained image O. By simple substracting and binary thresholding, we are able to get rainfall streaks S for analysis. But according to experiment, some images still quite messy under the condition that the moving trees and some hight pixel values give a false signal. In order to safeguard the following calculation process, we need to provide more accurate rainfall streaks. By achieving this, we decompose S with PCA and analyse the morphology of rain streaks etc. the shape of rain streak, the width of the rain streak, the orientation of the rain streak. With provided constraints, the output purified image will eventually put into Allamano algorithm.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-  &lt;img height=&quot;50%&quot; src=&quot;images/normal_pipeline.png&quot; /&gt;&lt;br /&gt;
+  &lt;img height=&quot;50%&quot; src=&quot;http://127.0.0.1:4000//images/normal_pipeline.png&quot; /&gt;&lt;br /&gt;
     Fig.2 Pipeline of normal rainfall process
 &lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;1. RNN&lt;/strong&gt;&amp;lt;hr style=&quot;height:10px; visibility:hidden&quot;&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. RNN&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-   &lt;img align=&quot;center&quot; src=&quot;images/RNN.PNG&quot; /&gt;&lt;br /&gt;
+   &lt;img align=&quot;center&quot; src=&quot;http://127.0.0.1:4000//images/RNN.PNG&quot; /&gt;&lt;br /&gt;
    Fig.3 Overview of RNN model (Progressive Image Deraining Networks: A Better and Simpler Baseline)
    &lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;2. Allamano Algorithm&lt;/strong&gt;&amp;lt;hr style=&quot;height:10px; visibility:hidden&quot;&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Allamano Algorithm&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
    &lt;img src=&quot;https://raw.githubusercontent.com/chrimerss/RainProperty/master/Rainstreak.png&quot; align=&quot;center&quot; /&gt;&lt;br /&gt;
@@ -99,7 +111,7 @@
 &lt;p&gt;an event on 2018.12.08 demonstrates the accuracy of this series of images.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-    &lt;img src=&quot;images/20181212-demo.gif&quot; /&gt;&lt;br /&gt;
+    &lt;img src=&quot;http://127.0.0.1:4000//images/20181212-demo.gif&quot; /&gt;&lt;br /&gt;
     Fig.5 Event 2018.12.12 at H2i, Singapore
    &lt;/p&gt;
 
@@ -163,9 +175,9 @@ will add once more data can be aquired
 &lt;p&gt;We have three data sources to validate our camera accuracy, first are three radars located in the northern, eastern and western part of Singapore. Another sources are 83 rain gauges densely distributed in Singapore. To bear in mind, the nearest rain gauges is still 300 meters away, and radar averages surroundings by 700 meters by 700 meters median filter. These two biases indicate that none of the two are convincible, and no updates will be given before some in-site measurement is placed right with camera.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;images/2018-1211-ts.png&quot; height=&quot;60%&quot; /&gt;&lt;br /&gt;
+   &lt;img src=&quot;http://127.0.0.1:4000//images/2018-1211-ts.png&quot; height=&quot;60%&quot; /&gt;&lt;br /&gt;
    Fig.6 Time Series Plot of One Event&lt;br /&gt;
-   &lt;img src=&quot;images/2018-1211-cts.png&quot; height=&quot;60%&quot; /&gt;&lt;br /&gt;
+   &lt;img src=&quot;http://127.0.0.1:4000//images/2018-1211-cts.png&quot; height=&quot;60%&quot; /&gt;&lt;br /&gt;
    Fig.7 Cumulative Time Series Plot of One Event&lt;br /&gt;
    &lt;/p&gt;
 
@@ -188,7 +200,7 @@ P. Allamano, A. Croci, and F. Laio1 (2015) &lt;em&gt;Toward the camera rain gaug
 &lt;p&gt;a local server should be set up at port 8000, in your browser, enter in localhost:8000, then the interface will pop up as&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;images/capture_of_localhost.PNG&quot; align=&quot;center&quot; /&gt;&lt;br /&gt;
+   &lt;img src=&quot;http://127.0.0.1:4000//images/capture_of_localhost.PNG&quot; align=&quot;center&quot; /&gt;&lt;br /&gt;
    Fig.5 Snapshot of the local server
    &lt;/p&gt;
 
@@ -225,28 +237,40 @@ P. Allamano, A. Croci, and F. Laio1 (2015) &lt;em&gt;Toward the camera rain gaug
 
 
 
-
 Contents
 
 1. Introduction
-### 2. Classifier
-### 3. Normal Rainfall Processing
-#### 3.1 Model Description
-#### 3.2 Model Efficiency
-### 4. Heavy Rainfall Processing
-### 5. Night Image Processing
-### 6. Validation
-### 7. Reference
-### 8. Misc
-#### 8.1 Demo
-#### 8.2 To-do List
-#### 8.3 Updates
+
+2. Classifier
+
+3. Normal Rainfall Processing
+
+3.1 Model Description
+
+3.2 Model Efficiency
+
+4. Heavy Rainfall Processing
+
+5. Night Image Processing
+
+6. Validation
+
+7. Reference
+
+8. Misc
+
+8.1 Demo
+
+8.2 To-do List
+
+8.3 Updates
 
 Introduction
 
 
   
-   Fig.1 Flow Chart of Rainfall Camera
+  Fig.1 Flow Chart of Rainfall Camera
+  
 
 
 Classifier
@@ -294,7 +318,7 @@ Follow the pipeline, we emphisize on how to extract the rainfall intensity. In t
     Fig.2 Pipeline of normal rainfall process
 
 
-1. RNN&amp;lt;hr style=&quot;height:10px; visibility:hidden&quot;&amp;gt;
+1. RNN
 
 
    
@@ -302,7 +326,7 @@ Follow the pipeline, we emphisize on how to extract the rainfall intensity. In t
    
 
 
-2. Allamano Algorithm&amp;lt;hr style=&quot;height:10px; visibility:hidden&quot;&amp;gt;
+2. Allamano Algorithm
 
 
    
