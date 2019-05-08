@@ -1,8 +1,8 @@
 # Site
 title: (Allen) Zhi Li
 description: Data Scientist @ Hydroinformatics Institute
-url: https://chrimerss.github.io/homepage
-# url: http://127.0.0.1:4000/
+# url: https://chrimerss.github.io/homepage
+url: http://127.0.0.1:4000/
 logo: allen.png                                       # Site logo
 locale: en_US
 

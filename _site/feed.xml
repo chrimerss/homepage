@@ -1,4 +1,489 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.2">Jekyll</generator><link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000//" rel="alternate" type="text/html" /><updated>2019-04-28T12:15:08+08:00</updated><id>http://127.0.0.1:4000//</id><title>(Allen) Zhi Li</title><subtitle>Data Scientist @ Hydroinformatics Institute</subtitle><entry><title>Rainfall Camera</title><link href="http://127.0.0.1:4000//post/" rel="alternate" type="text/html" title="Rainfall Camera" /><published>2019-04-27T00:00:00+08:00</published><updated>2019-04-27T00:00:00+08:00</updated><id>http://127.0.0.1:4000//post</id><content type="html" xml:base="http://127.0.0.1:4000//post/">&lt;h1 id=&quot;rainfall-camera&quot;&gt;Rainfall Camera&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.2">Jekyll</generator><link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000//" rel="alternate" type="text/html" /><updated>2019-05-08T16:43:27+08:00</updated><id>http://127.0.0.1:4000//</id><title>(Allen) Zhi Li</title><subtitle>Data Scientist @ Hydroinformatics Institute</subtitle><entry><title>Radar Project in Singapore</title><link href="http://127.0.0.1:4000//post-radar/" rel="alternate" type="text/html" title="Radar Project in Singapore" /><published>2019-05-03T00:00:00+08:00</published><updated>2019-05-03T00:00:00+08:00</updated><id>http://127.0.0.1:4000//post-radar</id><content type="html" xml:base="http://127.0.0.1:4000//post-radar/">&lt;h1 id=&quot;radar-project-in-singapore&quot;&gt;Radar Project in Singapore&lt;/h1&gt;
+
+&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
+
+&lt;h3 id=&quot;introductionintroduction&quot;&gt;1. &lt;a href=&quot;#introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;backgroundbackground&quot;&gt;1.1 &lt;a href=&quot;#background&quot;&gt;Background&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;radar-informationinfo&quot;&gt;1.2 &lt;a href=&quot;#info&quot;&gt;Radar Information&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h3 id=&quot;radar-observationobservation&quot;&gt;2. &lt;a href=&quot;#observation&quot;&gt;Radar Observation&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;z-r-relationshipz-r&quot;&gt;2.1 &lt;a href=&quot;#z-r&quot;&gt;Z-R relationship&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;image-integrationimginte&quot;&gt;2.2 &lt;a href=&quot;#img_inte&quot;&gt;Image Integration&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h3 id=&quot;radar-nowcastnowcast&quot;&gt;3. &lt;a href=&quot;#nowcast&quot;&gt;Radar Nowcast&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;convectionconvection&quot;&gt;3.1 &lt;a href=&quot;#convection&quot;&gt;Convection&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;growth-and-decaygrowthdecay&quot;&gt;3.2 &lt;a href=&quot;#growthdecay&quot;&gt;Growth and Decay&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;memory-integrationmemo&quot;&gt;3.3 &lt;a href=&quot;#memo&quot;&gt;Memory Integration&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h3 id=&quot;radar-improvementimprovement&quot;&gt;4. &lt;a href=&quot;#improvement&quot;&gt;Radar Improvement&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;miscellaneousmisc&quot;&gt;5. &lt;a href=&quot;#misc&quot;&gt;Miscellaneous&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h2 id=&quot;introductiona-nameintroductiona&quot;&gt;&lt;em&gt;Introduction&lt;/em&gt;&lt;a name=&quot;introduction&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+
+&lt;figure style=&quot;width: 60%&quot; class=&quot;align-center&quot;&gt;
+&lt;img align=&quot;center&quot; src=&quot;http://127.0.0.1:4000//images/radarproject.png&quot; /&gt;
+&lt;figcaption&gt;Fig.1 radar project overview&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This Project &lt;a href=&quot;http://www.h2i.sg/radar-rainfall-monitoring-and-nowcasting-system-for-urban-flood-management-in-singapore&quot;&gt;“RADAR RAINFALL MONITORING AND NOWCASTING SYSTEM FOR URBAN FLOOD MANAGEMENT IN SINGAPORE”&lt;/a&gt; is funded by PUB, Singapore. H2i (Hydroinformatics Institute) is going to hand over a peoduct including three X-band radars that cover Marina Catchment. The radar system consists of two essential parts, one is for rainfall observation, and the other is for nowcast. These two parts will be discussed in the following charpters.&lt;/p&gt;
+
+&lt;figure style=&quot;width: 60%&quot; class=&quot;align-center&quot;&gt;
+&lt;img align=&quot;center&quot; src=&quot;http://127.0.0.1:4000//images/radar_intro.png&quot; /&gt;
+&lt;figcaption&gt;Fig.2 radar project introduction&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;backgrounda-namebackgrounda&quot;&gt;Background&lt;a name=&quot;background&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;The first question: How radar measures rainfall?&lt;/p&gt;
+
+&lt;p&gt;As we know, radar is capable of detecting the obstacle and bounce back the signal. With this analogy, rain drop above the ground will be detected by radar signals, and also drop size etc. Then the next thing left is to construct a relationship between radar reflectivity and rainfall rate, known as Z-R relashionshp, which will be covered in &lt;a href=&quot;#z-r&quot;&gt;Z-R Relationship&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Then we need to answer why radar?&lt;/p&gt;
+
+&lt;p&gt;Traditionally, we measure rainfall through some ground based devices, called gauge data. gauge data are usually considered as ground truth data. However, if the stakeholders need information like how is it possible to get inundated in city, or the government wants to alert citizens that there will be flooded, then gauge is of course not able to send off these signals. We need something more than ground! Here is why radar comes in to save lives!&lt;/p&gt;
+
+&lt;p&gt;Additionally, rain gauge data will not give you a full map of rain rate over a city, which means they are spatial constrained. But radar, on contrast, has a higher resolution over the domain and specialize at producing spatial rainfall rate.&lt;/p&gt;
+
+&lt;p&gt;After the mechanism explained, I would like to emphisize some limitations that radar would be confined or conditions where radar is not able to detect rainfall.&lt;/p&gt;
+
+&lt;p&gt;One severe problem for radar is that, its sight often get blocked by some skyscrapers especially in mega-cities.&lt;/p&gt;
+
+&lt;p&gt;Another problem is sometimes, radar imposes fake signals like clusters or non-precipitating dots.&lt;/p&gt;
+
+&lt;p&gt;In order to build a real-time radar monitoring system, more challenges is coming for the sake of computations. Appropriate algorithms should be selected for the tradeoff between accuracy and effort.&lt;/p&gt;
+
+&lt;h3 id=&quot;radar-informationa-nameinfoa&quot;&gt;Radar Information&lt;a name=&quot;info&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Three X-band radars are built in the western, eastern and norther part of Singapore, operating in observing rain and producing forecast every two minutes. Spatially, three radars will integrate together and produce a map with 100x100 meters resolution over 100kmx100km domain.&lt;/p&gt;
+
+&lt;p&gt;X-band radar contains around 9 layers of information, like rainfall, reflectivity, wind vector, etc. But in the first phase of this project, we only consider using reflectivity to calculate rainfall.&lt;/p&gt;
+
+&lt;h2 id=&quot;radar-observationa-nameobservationa&quot;&gt;&lt;em&gt;Radar Observation&lt;/em&gt;&lt;a name=&quot;observation&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;z-r-relationshipa-namez-ra&quot;&gt;Z-R Relationship&lt;a name=&quot;z-r&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Z-R relationship directly maps reflectivity with rain rate. We construct this relationship based on emperial expression that has been provided with lots of practices.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Z=AR^b&lt;/script&gt;
+
+&lt;p&gt;To calibrate this relationship, we selected several year-long events and calibrated the A, b parameter for each of three radar.&lt;/p&gt;
+
+&lt;h3 id=&quot;image-integrationa-nameimgintea&quot;&gt;Image Integration&lt;a name=&quot;img_inte&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Three radars need to be integrated to produce only one spatially distributed rainfall map. Integration is based on maximizing the coverage of the radars. As described before, some radars fall into the poor sight, which means they are blocked by nearby buildings or telecommunications.&lt;/p&gt;
+
+&lt;figure style=&quot;width: 50%&quot; class=&quot;align-center&quot;&gt;
+&lt;img align=&quot;center&quot; src=&quot;http://127.0.0.1:4000//images/blocked_radar.png&quot; /&gt;
+&lt;figcaption&gt;Fig.3 representation of blocked radar image&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The figure above gives an illustrative example that one radar is blocked known as blind spots (radius)&lt;/p&gt;
+
+&lt;p&gt;To compensate for this, we analyzed the blind spots for each radar, and try to rely on each other to correct the blinds. Here we used weighted average value to determine which area is highly dependent on which radar.&lt;/p&gt;
+
+&lt;p&gt;After this correction, the final map looks like this…&lt;/p&gt;
+
+&lt;figure style=&quot;width: 50%&quot; class=&quot;align-center&quot;&gt;
+&lt;img align=&quot;center&quot; src=&quot;http://127.0.0.1:4000//images/blind_spots_correction.png&quot; /&gt;
+&lt;figcaption&gt;Fig.4 radar blind spots correction&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;radar-nowcasta-namenowcasta&quot;&gt;&lt;em&gt;Radar Nowcast&lt;/em&gt;&lt;a name=&quot;nowcast&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Radar nowcast plays an important role in releasing alert in the city if a potential flood is going to happen. The important signal for predicting rain over the large domain is relied on the movement of clouds.&lt;/p&gt;
+
+&lt;p&gt;With analogy to water quality model, the movement of clouds similarly will be decomposed as &lt;a href=&quot;#convection&quot;&gt;convection&lt;/a&gt; and &lt;a href=&quot;#growthdecay&quot;&gt;diffusion&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;convectiona-nameconvectiona&quot;&gt;Convection&lt;a name=&quot;convection&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Singapore, mostly suffers from convective storms, which simply conceptualize as decomposition of movement to velocity driven. Though this method is not accurate enough, it still supports us a big picture about where those rainy clouds to move.&lt;/p&gt;
+
+&lt;p&gt;The velocity for prediction is obtained by analyzing the movement of most clouds in the image domain. and then assume the persistence of Euler method, which freezes the last image (base image). After gaining information (velocity, moving direction), we forecast the cloud at next time step. With this method, we provide 45 minutes long-term forecasting in real-time(2 minutes latency).&lt;/p&gt;
+
+&lt;h3 id=&quot;growth--decaya-namegrowthdecaya&quot;&gt;Growth &amp;amp; Decay&lt;a name=&quot;growthdecay&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Even though convective storm dominates over tropical regions like Singapore, the sophisticated atmosphiric model doesnot only account for 2-dimensional movement. As well, the growth and decay of the clouds should be taken into account. Since then, we propose a linear growth and decay model with following formula:&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+F_{T+i}^j=(C_i^1G_T^j+C_i^2R_T^j)/R_T^j
+&lt;/p&gt;
+
+&lt;h3 id=&quot;memory-integrationa-namememoa&quot;&gt;Memory Integration&lt;a name=&quot;memo&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Memory integration comes into play because we observed the effect of previous velocity states. For instance, the continuity equation suggests that nothing will occur abruptly or dispear suddenly. This give us insights about using the combination of previous states of velocities to enhance our forecast model.&lt;/p&gt;
+
+&lt;h2 id=&quot;radar-improvementsa-nameimprovementa&quot;&gt;&lt;em&gt;Radar Improvements&lt;/em&gt;&lt;a name=&quot;improvement&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Obviously, there are bunch of ways to improve our existing radar performance. we will project to address these problems by alternating methods, even deep learning if possible.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;For radar observation&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In the future, we will be given more “reliable” data and not limited to ground proof gauge data. NEA will provide us another X-band radar data to better cross-validate data.&lt;/p&gt;
+
+&lt;p&gt;In such sense, to deal with multi-sourced data, it becomes obvious to utilize &lt;a href=&quot;https://en.wikipedia.org/wiki/Kalman_filter&quot;&gt;Kalman Filter&lt;/a&gt; for better data management.&lt;/p&gt;
+
+&lt;p&gt;Besides, we can also improve Z-R relationship with some machine learning techniques like Artificial Neural Network(ANN) or Random Forest (RF), but in my perspective, I prefer to use random forest because RF does not suffer from over-training, and should be enough to compensate all situations.&lt;/p&gt;
+
+&lt;p&gt;Meanwhile, if it is needed to clean radar raw data — reflectivity, we can train our data with autoencoder network before feeding into rainfall calculation. But I suspect that the training process and even evaluation will dramatically increase the calculation time. As for the real-time forecast, we may not be able to afford it.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Radar Nowcast&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Here is more appropriate to use deep learning model to forecast. It turns out some researches have been conducted in this topic. Mostly, &lt;a href=&quot;https://colah.github.io/posts/2015-08-Understanding-LSTMs/&quot;&gt;LSTM&lt;/a&gt; (known as long short-term memory) fits into this topic, because it can recognize and memorize long sequence. Before actually implement this, I will post some repos on &lt;a href=&quot;https://github.com/chrimerss/RadarEnhancement&quot;&gt;github&lt;/a&gt; to see the possibility.&lt;/p&gt;
+
+&lt;h2 id=&quot;miscellaneousa-namemisca&quot;&gt;&lt;em&gt;Miscellaneous&lt;/em&gt;&lt;a name=&quot;misc&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;statistical-measurement&quot;&gt;Statistical Measurement&lt;/h3&gt;
+
+&lt;p&gt;This chapter, I will introduce some statistical measurement used in this project, and also very wide-approached in the research. I will split this part into comparing with rain gauge which corresponds to point time series comparison and image comparison which is multi-dimensional statistics.&lt;/p&gt;
+
+&lt;h4 id=&quot;radar-gauge-comparison&quot;&gt;Radar Gauge Comparison&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Root Mean Square Error&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I believe everyone is familliar with this term RMSE. This should be introduced in high scholl when we measure how close two arrays are compared, like in calculating the variance.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Total Volume Ratio(TVR)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;TVR is intuitively understandable. It compares the total rainfall observed by gauge and radar over a specific time duration (say an event). This statistic is useful when you want to emphisize whether radar is over-estimated or under-estimated. We mentioned that radar fails when it is blocked by high buildings, and typically in such regions, radar is underestimated comparing to gauge. Here we provide a good example showing the way to stress that radar is unreliable.&lt;/p&gt;
+
+&lt;figure style=&quot;width:60%&quot; class=&quot;align-center&quot;&gt;
+&lt;img src=&quot;http://127.0.0.1:4000//images/TVMcompare.png&quot; /&gt;
+&lt;figcaption&gt;Fig.5 Total Volumn Ratio&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Mean Absolute Error(MAE)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Again, this statistic is not complex. I will not explain it any further.&lt;/p&gt;
+
+&lt;p&gt;I want to make a point here that above statistics I mentioned have problem when accounting for different rainfall rate during event. For instance, one location falls more rainfall than other, would you expect this location has smaller error than other rain-free location?&lt;/p&gt;
+
+&lt;p&gt;Of course not, rain-free location has zero error but more rainfall brings with larger error. But the thing is, we donot care about rain-free areas, we only want to know how our rainfall measured by radar is close to gauge. Then we may need a trick — Normalized statistics.&lt;/p&gt;
+
+&lt;p&gt;Another technique here we discovered is that, these statistics are better during large events which means more rainfall, while worse during small rainfall. This will refer to the tipping bucket effect of gauge data. This graph to illustrate here is amazzzing…&lt;/p&gt;
+
+&lt;figure style=&quot;width:60%&quot; class=&quot;align-center&quot;&gt;
+&lt;img src=&quot;http://127.0.0.1:4000//images/R2.png&quot; /&gt;
+&lt;figcaption&gt;Fig.6 Correlation coefficient&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;radar-image-comparison&quot;&gt;Radar Image Comparison&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Probability of Detection (POD)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p align=&quot;center&quot;&gt;
+ POD= \frac{a,a+b}
+&lt;/p&gt;
+&lt;p&gt;Where a is the number of grid cells where rain occurred and they were successful predicted as rain cells by the nowcasting model; and b is the number of grid cells where rain occurred but they were not predicted by the nowcasting model. What is marked as ‘rain’ and what as ‘no rain’ is determined using a particular threshold Z. The threshold is used because the measured radar data can have clutter and noise which can produce spurious values at low intensities. The threshold is set at Z = 0.5 mm/hr. This means that whenever rainfall is measured above this threshold it will be marked as an ‘rain’; otherwise as ‘no rain’.&lt;/p&gt;
+
+&lt;table style=&quot;width:40%&quot; align=&quot;center&quot;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Measurement&lt;/th&gt;
+    &lt;th&gt;Forecast rain&lt;/th&gt; 
+    &lt;th&gt;Forecast no-rain&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Rain&lt;/td&gt;
+    &lt;td&gt;a&lt;/td&gt; 
+    &lt;td&gt;b&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;no-rain&lt;/td&gt;
+    &lt;td&gt;c&lt;/td&gt; 
+    &lt;td&gt;d&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;figure style=&quot;width:60%&quot; class=&quot;align-center&quot;&gt;
+&lt;img src=&quot;http://127.0.0.1:4000//images/POD.png&quot; /&gt;&lt;br /&gt;
+&lt;figcaption&gt;Fig.7 POD for 30 mins lead time&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;False Alarm Rate(FAR)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p align=&quot;center&quot;&gt;
+ FAR= \frac{c,a+c}
+&lt;/p&gt;
+&lt;p&gt;where the a,c has the same meaning as before.&lt;br /&gt;
+This indicates the probability of producing false signal.&lt;/p&gt;
+
+&lt;figure style=&quot;width:60%&quot; class=&quot;align-center&quot;&gt;
+&lt;img src=&quot;http://127.0.0.1:4000//images/FAR.png&quot; /&gt;
+&lt;figcaption&gt;Fig.7 FAR for 30 mins lead time&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Critical Success Index (CSI)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p align=&quot;center&quot;&gt;
+CSI=\frac{a, a+b+c}
+&lt;/p&gt;
+&lt;p&gt;where the a,b,c has the same meaning as before.&lt;/p&gt;
+
+&lt;figure style=&quot;width:60%&quot; class=&quot;align-center&quot;&gt;
+&lt;img src=&quot;http://127.0.0.1:4000//images/CSI.png&quot; /&gt;
+&lt;figcaption&gt;Fig.8 CSI for 30 mins lead time&lt;/figcaption&gt;
+&lt;/figure&gt;</content><category term="machine learning" /><category term="deep learning" /><category term="hydroinformatics" /><category term="hydrometeorology" /><summary>Radar Project in Singapore
+
+Contents
+
+1. Introduction
+
+1.1 Background
+
+1.2 Radar Information
+
+2. Radar Observation
+
+2.1 Z-R relationship
+
+2.2 Image Integration
+
+3. Radar Nowcast
+
+3.1 Convection
+
+3.2 Growth and Decay
+
+3.3 Memory Integration
+
+4. Radar Improvement
+
+5. Miscellaneous
+
+Introduction
+
+
+
+Fig.1 radar project overview
+
+
+This Project “RADAR RAINFALL MONITORING AND NOWCASTING SYSTEM FOR URBAN FLOOD MANAGEMENT IN SINGAPORE” is funded by PUB, Singapore. H2i (Hydroinformatics Institute) is going to hand over a peoduct including three X-band radars that cover Marina Catchment. The radar system consists of two essential parts, one is for rainfall observation, and the other is for nowcast. These two parts will be discussed in the following charpters.
+
+
+
+Fig.2 radar project introduction
+
+
+Background
+
+The first question: How radar measures rainfall?
+
+As we know, radar is capable of detecting the obstacle and bounce back the signal. With this analogy, rain drop above the ground will be detected by radar signals, and also drop size etc. Then the next thing left is to construct a relationship between radar reflectivity and rainfall rate, known as Z-R relashionshp, which will be covered in Z-R Relationship
+
+Then we need to answer why radar?
+
+Traditionally, we measure rainfall through some ground based devices, called gauge data. gauge data are usually considered as ground truth data. However, if the stakeholders need information like how is it possible to get inundated in city, or the government wants to alert citizens that there will be flooded, then gauge is of course not able to send off these signals. We need something more than ground! Here is why radar comes in to save lives!
+
+Additionally, rain gauge data will not give you a full map of rain rate over a city, which means they are spatial constrained. But radar, on contrast, has a higher resolution over the domain and specialize at producing spatial rainfall rate.
+
+After the mechanism explained, I would like to emphisize some limitations that radar would be confined or conditions where radar is not able to detect rainfall.
+
+One severe problem for radar is that, its sight often get blocked by some skyscrapers especially in mega-cities.
+
+Another problem is sometimes, radar imposes fake signals like clusters or non-precipitating dots.
+
+In order to build a real-time radar monitoring system, more challenges is coming for the sake of computations. Appropriate algorithms should be selected for the tradeoff between accuracy and effort.
+
+Radar Information
+
+Three X-band radars are built in the western, eastern and norther part of Singapore, operating in observing rain and producing forecast every two minutes. Spatially, three radars will integrate together and produce a map with 100x100 meters resolution over 100kmx100km domain.
+
+X-band radar contains around 9 layers of information, like rainfall, reflectivity, wind vector, etc. But in the first phase of this project, we only consider using reflectivity to calculate rainfall.
+
+Radar Observation
+
+Z-R Relationship
+
+Z-R relationship directly maps reflectivity with rain rate. We construct this relationship based on emperial expression that has been provided with lots of practices.
+
+
+
+To calibrate this relationship, we selected several year-long events and calibrated the A, b parameter for each of three radar.
+
+Image Integration
+
+Three radars need to be integrated to produce only one spatially distributed rainfall map. Integration is based on maximizing the coverage of the radars. As described before, some radars fall into the poor sight, which means they are blocked by nearby buildings or telecommunications.
+
+
+
+Fig.3 representation of blocked radar image
+
+
+The figure above gives an illustrative example that one radar is blocked known as blind spots (radius)
+
+To compensate for this, we analyzed the blind spots for each radar, and try to rely on each other to correct the blinds. Here we used weighted average value to determine which area is highly dependent on which radar.
+
+After this correction, the final map looks like this…
+
+
+
+Fig.4 radar blind spots correction
+
+
+Radar Nowcast
+
+Radar nowcast plays an important role in releasing alert in the city if a potential flood is going to happen. The important signal for predicting rain over the large domain is relied on the movement of clouds.
+
+With analogy to water quality model, the movement of clouds similarly will be decomposed as convection and diffusion.
+
+Convection
+
+Singapore, mostly suffers from convective storms, which simply conceptualize as decomposition of movement to velocity driven. Though this method is not accurate enough, it still supports us a big picture about where those rainy clouds to move.
+
+The velocity for prediction is obtained by analyzing the movement of most clouds in the image domain. and then assume the persistence of Euler method, which freezes the last image (base image). After gaining information (velocity, moving direction), we forecast the cloud at next time step. With this method, we provide 45 minutes long-term forecasting in real-time(2 minutes latency).
+
+Growth &amp;amp; Decay
+
+Even though convective storm dominates over tropical regions like Singapore, the sophisticated atmosphiric model doesnot only account for 2-dimensional movement. As well, the growth and decay of the clouds should be taken into account. Since then, we propose a linear growth and decay model with following formula:
+
+F_{T+i}^j=(C_i^1G_T^j+C_i^2R_T^j)/R_T^j
+
+
+Memory Integration
+
+Memory integration comes into play because we observed the effect of previous velocity states. For instance, the continuity equation suggests that nothing will occur abruptly or dispear suddenly. This give us insights about using the combination of previous states of velocities to enhance our forecast model.
+
+Radar Improvements
+
+Obviously, there are bunch of ways to improve our existing radar performance. we will project to address these problems by alternating methods, even deep learning if possible.
+
+
+  For radar observation
+
+
+In the future, we will be given more “reliable” data and not limited to ground proof gauge data. NEA will provide us another X-band radar data to better cross-validate data.
+
+In such sense, to deal with multi-sourced data, it becomes obvious to utilize Kalman Filter for better data management.
+
+Besides, we can also improve Z-R relationship with some machine learning techniques like Artificial Neural Network(ANN) or Random Forest (RF), but in my perspective, I prefer to use random forest because RF does not suffer from over-training, and should be enough to compensate all situations.
+
+Meanwhile, if it is needed to clean radar raw data — reflectivity, we can train our data with autoencoder network before feeding into rainfall calculation. But I suspect that the training process and even evaluation will dramatically increase the calculation time. As for the real-time forecast, we may not be able to afford it.
+
+
+  Radar Nowcast
+
+
+Here is more appropriate to use deep learning model to forecast. It turns out some researches have been conducted in this topic. Mostly, LSTM (known as long short-term memory) fits into this topic, because it can recognize and memorize long sequence. Before actually implement this, I will post some repos on github to see the possibility.
+
+Miscellaneous
+
+Statistical Measurement
+
+This chapter, I will introduce some statistical measurement used in this project, and also very wide-approached in the research. I will split this part into comparing with rain gauge which corresponds to point time series comparison and image comparison which is multi-dimensional statistics.
+
+Radar Gauge Comparison
+
+
+  Root Mean Square Error
+
+
+I believe everyone is familliar with this term RMSE. This should be introduced in high scholl when we measure how close two arrays are compared, like in calculating the variance.
+
+
+  Total Volume Ratio(TVR)
+
+
+TVR is intuitively understandable. It compares the total rainfall observed by gauge and radar over a specific time duration (say an event). This statistic is useful when you want to emphisize whether radar is over-estimated or under-estimated. We mentioned that radar fails when it is blocked by high buildings, and typically in such regions, radar is underestimated comparing to gauge. Here we provide a good example showing the way to stress that radar is unreliable.
+
+
+
+Fig.5 Total Volumn Ratio
+
+
+
+  Mean Absolute Error(MAE)
+
+
+Again, this statistic is not complex. I will not explain it any further.
+
+I want to make a point here that above statistics I mentioned have problem when accounting for different rainfall rate during event. For instance, one location falls more rainfall than other, would you expect this location has smaller error than other rain-free location?
+
+Of course not, rain-free location has zero error but more rainfall brings with larger error. But the thing is, we donot care about rain-free areas, we only want to know how our rainfall measured by radar is close to gauge. Then we may need a trick — Normalized statistics.
+
+Another technique here we discovered is that, these statistics are better during large events which means more rainfall, while worse during small rainfall. This will refer to the tipping bucket effect of gauge data. This graph to illustrate here is amazzzing…
+
+
+
+Fig.6 Correlation coefficient
+
+
+Radar Image Comparison
+
+
+  Probability of Detection (POD)
+
+
+ POD= \frac{a,a+b}
+
+Where a is the number of grid cells where rain occurred and they were successful predicted as rain cells by the nowcasting model; and b is the number of grid cells where rain occurred but they were not predicted by the nowcasting model. What is marked as ‘rain’ and what as ‘no rain’ is determined using a particular threshold Z. The threshold is used because the measured radar data can have clutter and noise which can produce spurious values at low intensities. The threshold is set at Z = 0.5 mm/hr. This means that whenever rainfall is measured above this threshold it will be marked as an ‘rain’; otherwise as ‘no rain’.
+
+
+  
+    Measurement
+    Forecast rain 
+    Forecast no-rain
+  
+  
+    Rain
+    a 
+    b
+  
+  
+    no-rain
+    c 
+    d
+  
+
+
+
+
+Fig.7 POD for 30 mins lead time
+
+
+
+  False Alarm Rate(FAR)
+
+
+ FAR= \frac{c,a+c}
+
+where the a,c has the same meaning as before.
+This indicates the probability of producing false signal.
+
+
+
+Fig.7 FAR for 30 mins lead time
+
+
+
+  Critical Success Index (CSI)
+
+
+CSI=\frac{a, a+b+c}
+
+where the a,b,c has the same meaning as before.
+
+
+
+Fig.8 CSI for 30 mins lead time</summary></entry><entry><title>Rainfall Camera</title><link href="http://127.0.0.1:4000//post-camera/" rel="alternate" type="text/html" title="Rainfall Camera" /><published>2019-04-27T00:00:00+08:00</published><updated>2019-04-27T00:00:00+08:00</updated><id>http://127.0.0.1:4000//post-camera</id><content type="html" xml:base="http://127.0.0.1:4000//post-camera/">&lt;h1 id=&quot;rainfall-camera&quot;&gt;Rainfall Camera&lt;/h1&gt;
 &lt;hr /&gt;
 
 &lt;figure style=&quot;width: 80%&quot; class=&quot;align-center&quot;&gt;
