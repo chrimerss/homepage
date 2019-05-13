@@ -466,7 +466,6 @@ canvas {
 #posts {
 
   .post-block {
-    block-size: 800px;
     display: block;
     .content {
       height: auto;
@@ -481,6 +480,9 @@ canvas {
   padding-left:50px;
     .inner-post content {
     max-width:700px;
+      .share{
+      vertical-align:middle;
+      }
     }
   }
   .logo {
@@ -574,10 +576,11 @@ canvas {
   margin-top: 100px;
   padding-left: 50px;
   padding-right: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   overflow: scroll;
-  height: 100%;
-  margin-right: 50px;
+  height: 90%;
+  margin-right: 100px;
+  margin-left:100px;
 
 
 }
@@ -886,9 +889,9 @@ canvas {
   margin-top: 1em;
   &_pager {
     display: inline-block;
-    padding: 0.75em;
+    padding: 1em;
     min-width: 5.5em;
-    font-size: 0.8em;
+    font-size: 1.2em;
     font-weight: 400;
     background-color: darken($white, 5%);
     color: darken($white, 35%) !important;
