@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.2">Jekyll</generator><link href="https://chrimerss.github.io/homepage/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chrimerss.github.io/homepage/" rel="alternate" type="text/html" /><updated>2019-08-07T16:14:42-05:00</updated><id>https://chrimerss.github.io/homepage/</id><title>(Allen) Zhi Li</title><subtitle>Data Scientist @ Hydroinformatics Institute</subtitle><entry><title>Radar Project in Singapore</title><link href="https://chrimerss.github.io/homepage/post-radar/" rel="alternate" type="text/html" title="Radar Project in Singapore" /><published>2019-05-03T00:00:00-05:00</published><updated>2019-05-03T00:00:00-05:00</updated><id>https://chrimerss.github.io/homepage/post-radar</id><content type="html" xml:base="https://chrimerss.github.io/homepage/post-radar/">&lt;h1 id=&quot;radar-project-in-singapore&quot;&gt;Radar Project in Singapore&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.2">Jekyll</generator><link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000//" rel="alternate" type="text/html" /><updated>2019-08-20T17:31:02-05:00</updated><id>http://127.0.0.1:4000//</id><title>(Allen) Zhi Li</title><subtitle>Ph.D. candidate @ U of Oklahoma</subtitle><entry><title>Radar Project in Singapore</title><link href="http://127.0.0.1:4000//post-radar/" rel="alternate" type="text/html" title="Radar Project in Singapore" /><published>2019-05-03T00:00:00-05:00</published><updated>2019-05-03T00:00:00-05:00</updated><id>http://127.0.0.1:4000//post-radar</id><content type="html" xml:base="http://127.0.0.1:4000//post-radar/">&lt;h1 id=&quot;radar-project-in-singapore&quot;&gt;Radar Project in Singapore&lt;/h1&gt;
 
 &lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
 
@@ -29,14 +29,14 @@
 &lt;h2 id=&quot;introductiona-nameintroductiona&quot;&gt;&lt;em&gt;Introduction&lt;/em&gt;&lt;a name=&quot;introduction&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
 
 &lt;figure style=&quot;width: 60%&quot; class=&quot;align-center&quot;&gt;
-&lt;img align=&quot;center&quot; src=&quot;https://chrimerss.github.io/homepage/images/radarproject.png&quot; /&gt;
+&lt;img align=&quot;center&quot; src=&quot;http://127.0.0.1:4000//images/radarproject.png&quot; /&gt;
 &lt;figcaption&gt;Fig.1 radar project overview&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;This Project &lt;a href=&quot;http://www.h2i.sg/radar-rainfall-monitoring-and-nowcasting-system-for-urban-flood-management-in-singapore&quot;&gt;“RADAR RAINFALL MONITORING AND NOWCASTING SYSTEM FOR URBAN FLOOD MANAGEMENT IN SINGAPORE”&lt;/a&gt; is funded by PUB, Singapore. H2i (Hydroinformatics Institute) is going to hand over a peoduct including three X-band radars that cover Marina Catchment. The radar system consists of two essential parts, one is for rainfall observation, and the other is for nowcast. These two parts will be discussed in the following charpters.&lt;/p&gt;
 
 &lt;figure style=&quot;width: 60%&quot; class=&quot;align-center&quot;&gt;
-&lt;img align=&quot;center&quot; src=&quot;https://chrimerss.github.io/homepage/images/radar_intro.png&quot; /&gt;
+&lt;img align=&quot;center&quot; src=&quot;http://127.0.0.1:4000//images/radar_intro.png&quot; /&gt;
 &lt;figcaption&gt;Fig.2 radar project introduction&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -81,7 +81,7 @@
 &lt;p&gt;Three radars need to be integrated to produce only one spatially distributed rainfall map. Integration is based on maximizing the coverage of the radars. As described before, some radars fall into the poor sight, which means they are blocked by nearby buildings or telecommunications.&lt;/p&gt;
 
 &lt;figure style=&quot;width: 50%&quot; class=&quot;align-center&quot;&gt;
-&lt;img align=&quot;center&quot; src=&quot;https://chrimerss.github.io/homepage/images/blocked_radar.png&quot; /&gt;
+&lt;img align=&quot;center&quot; src=&quot;http://127.0.0.1:4000//images/blocked_radar.png&quot; /&gt;
 &lt;figcaption&gt;Fig.3 representation of blocked radar image&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -92,7 +92,7 @@
 &lt;p&gt;After this correction, the final map looks like this…&lt;/p&gt;
 
 &lt;figure style=&quot;width: 50%&quot; class=&quot;align-center&quot;&gt;
-&lt;img align=&quot;center&quot; src=&quot;https://chrimerss.github.io/homepage/images/blind_spots_correction.png&quot; /&gt;
+&lt;img align=&quot;center&quot; src=&quot;http://127.0.0.1:4000//images/blind_spots_correction.png&quot; /&gt;
 &lt;figcaption&gt;Fig.4 radar blind spots correction&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -162,7 +162,7 @@ F_{T+i}^j=(C_i^1G_T^j+C_i^2R_T^j)/R_T^j
 &lt;p&gt;TVR is intuitively understandable. It compares the total rainfall observed by gauge and radar over a specific time duration (say an event). This statistic is useful when you want to emphisize whether radar is over-estimated or under-estimated. We mentioned that radar fails when it is blocked by high buildings, and typically in such regions, radar is underestimated comparing to gauge. Here we provide a good example showing the way to stress that radar is unreliable.&lt;/p&gt;
 
 &lt;figure style=&quot;width:60%&quot; class=&quot;align-center&quot;&gt;
-&lt;img src=&quot;https://chrimerss.github.io/homepage/images/TVMcompare.png&quot; /&gt;
+&lt;img src=&quot;http://127.0.0.1:4000//images/TVMcompare.png&quot; /&gt;
 &lt;figcaption&gt;Fig.5 Total Volumn Ratio&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -179,7 +179,7 @@ F_{T+i}^j=(C_i^1G_T^j+C_i^2R_T^j)/R_T^j
 &lt;p&gt;Another technique here we discovered is that, these statistics are better during large events which means more rainfall, while worse during small rainfall. This will refer to the tipping bucket effect of gauge data. This graph to illustrate here is amazzzing…&lt;/p&gt;
 
 &lt;figure style=&quot;width:60%&quot; class=&quot;align-center&quot;&gt;
-&lt;img src=&quot;https://chrimerss.github.io/homepage/images/R2.png&quot; /&gt;
+&lt;img src=&quot;http://127.0.0.1:4000//images/R2.png&quot; /&gt;
 &lt;figcaption&gt;Fig.6 Correlation coefficient&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -212,7 +212,7 @@ F_{T+i}^j=(C_i^1G_T^j+C_i^2R_T^j)/R_T^j
 &lt;/table&gt;
 
 &lt;figure style=&quot;width:60%&quot; class=&quot;align-center&quot;&gt;
-&lt;img src=&quot;https://chrimerss.github.io/homepage/images/POD.png&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;http://127.0.0.1:4000//images/POD.png&quot; /&gt;&lt;br /&gt;
 &lt;figcaption&gt;Fig.7 POD for 30 mins lead time&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -226,7 +226,7 @@ F_{T+i}^j=(C_i^1G_T^j+C_i^2R_T^j)/R_T^j
 This indicates the probability of producing false signal.&lt;/p&gt;
 
 &lt;figure style=&quot;width:60%&quot; class=&quot;align-center&quot;&gt;
-&lt;img src=&quot;https://chrimerss.github.io/homepage/images/FAR.png&quot; /&gt;
+&lt;img src=&quot;http://127.0.0.1:4000//images/FAR.png&quot; /&gt;
 &lt;figcaption&gt;Fig.7 FAR for 30 mins lead time&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -239,7 +239,7 @@ CSI=\frac{a, a+b+c}
 &lt;p&gt;where the a,b,c has the same meaning as before.&lt;/p&gt;
 
 &lt;figure style=&quot;width:60%&quot; class=&quot;align-center&quot;&gt;
-&lt;img src=&quot;https://chrimerss.github.io/homepage/images/CSI.png&quot; /&gt;
+&lt;img src=&quot;http://127.0.0.1:4000//images/CSI.png&quot; /&gt;
 &lt;figcaption&gt;Fig.8 CSI for 30 mins lead time&lt;/figcaption&gt;
 &lt;/figure&gt;</content><category term="machine learning" /><category term="deep learning" /><category term="hydroinformatics" /><category term="hydrometeorology" /><summary>Radar Project in Singapore
 
@@ -483,11 +483,11 @@ where the a,b,c has the same meaning as before.
 
 
 
-Fig.8 CSI for 30 mins lead time</summary></entry><entry><title>Rainfall Camera</title><link href="https://chrimerss.github.io/homepage/post-camera/" rel="alternate" type="text/html" title="Rainfall Camera" /><published>2019-04-27T00:00:00-05:00</published><updated>2019-04-27T00:00:00-05:00</updated><id>https://chrimerss.github.io/homepage/post-camera</id><content type="html" xml:base="https://chrimerss.github.io/homepage/post-camera/">&lt;h1 id=&quot;rainfall-camera&quot;&gt;Rainfall Camera&lt;/h1&gt;
+Fig.8 CSI for 30 mins lead time</summary></entry><entry><title>Rainfall Camera</title><link href="http://127.0.0.1:4000//post-camera/" rel="alternate" type="text/html" title="Rainfall Camera" /><published>2019-04-27T00:00:00-05:00</published><updated>2019-04-27T00:00:00-05:00</updated><id>http://127.0.0.1:4000//post-camera</id><content type="html" xml:base="http://127.0.0.1:4000//post-camera/">&lt;h1 id=&quot;rainfall-camera&quot;&gt;Rainfall Camera&lt;/h1&gt;
 &lt;hr /&gt;
 
 &lt;figure style=&quot;width: 80%&quot; class=&quot;align-center&quot;&gt;
-&lt;img align=&quot;center&quot; src=&quot;https://chrimerss.github.io/homepage/images/Singapore.PNG&quot; /&gt;
+&lt;img align=&quot;center&quot; src=&quot;http://127.0.0.1:4000//images/Singapore.PNG&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&quot;contents&quot;&gt;&lt;em&gt;Contents&lt;/em&gt;&lt;/h2&gt;
@@ -521,7 +521,7 @@ Fig.8 CSI for 30 mins lead time</summary></entry><entry><title>Rainfall Camera</
 &lt;h2 id=&quot;introductiona-nameintroductiona&quot;&gt;&lt;em&gt;Introduction&lt;/em&gt;&lt;a name=&quot;introduction&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
 
 &lt;figure style=&quot;width: 40%&quot; class=&quot;align-center&quot;&gt;
-  &lt;img src=&quot;https://chrimerss.github.io/homepage/images/Flowchart.png&quot; /&gt;
+  &lt;img src=&quot;http://127.0.0.1:4000//images/Flowchart.png&quot; /&gt;
   &lt;figcaption&gt;Fig.1 Flow Chart of Rainfall Camera&lt;/figcaption&gt;
   &lt;/figure&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -567,14 +567,14 @@ Fig.8 CSI for 30 mins lead time</summary></entry><entry><title>Rainfall Camera</
 &lt;p&gt;Follow the pipeline, we emphisize on how to extract the rainfall intensity. In this method we describe, we feed the classified rainy image denoted as R into 4 times pretrained recurrent neuron network to get the original de-rained image O. By simple substracting and binary thresholding, we are able to get rainfall streaks S for analysis. But according to experiment, some images still quite messy under the condition that the moving trees and some hight pixel values give a false signal. In order to safeguard the following calculation process, we need to provide more accurate rainfall streaks. By achieving this, we decompose S with PCA and analyse the morphology of rain streaks etc. the shape of rain streak, the width of the rain streak, the orientation of the rain streak. With provided constraints, the output purified image will eventually put into Allamano algorithm.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-  &lt;img height=&quot;50%&quot; src=&quot;https://chrimerss.github.io/homepage/images/normal_pipeline.png&quot; /&gt;&lt;br /&gt;
+  &lt;img height=&quot;50%&quot; src=&quot;http://127.0.0.1:4000//images/normal_pipeline.png&quot; /&gt;&lt;br /&gt;
     Fig.2 Pipeline of normal rainfall process
 &lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;1. RNN&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-   &lt;img align=&quot;center&quot; src=&quot;https://chrimerss.github.io/homepage/images/RNN.PNG&quot; /&gt;&lt;br /&gt;
+   &lt;img align=&quot;center&quot; src=&quot;http://127.0.0.1:4000//images/RNN.PNG&quot; /&gt;&lt;br /&gt;
    Fig.3 Overview of RNN model (Progressive Image Deraining Networks: A Better and Simpler Baseline)
    &lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -596,7 +596,7 @@ Fig.8 CSI for 30 mins lead time</summary></entry><entry><title>Rainfall Camera</
 &lt;p&gt;an event on 2018.12.08 demonstrates the accuracy of this series of images.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-    &lt;img src=&quot;https://chrimerss.github.io/homepage/images/20181212-demo.gif&quot; /&gt;&lt;br /&gt;
+    &lt;img src=&quot;http://127.0.0.1:4000//images/20181212-demo.gif&quot; /&gt;&lt;br /&gt;
     Fig.5 Event 2018.12.12 at H2i, Singapore
    &lt;/p&gt;
 
@@ -660,9 +660,9 @@ will add once more data can be aquired
 &lt;p&gt;We have three data sources to validate our camera accuracy, first are three radars located in the northern, eastern and western part of Singapore. Another sources are 83 rain gauges densely distributed in Singapore. To bear in mind, the nearest rain gauges is still 300 meters away, and radar averages surroundings by 700 meters by 700 meters median filter. These two biases indicate that none of the two are convincible, and no updates will be given before some in-site measurement is placed right with camera.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;https://chrimerss.github.io/homepage/images/2018-1211-ts.png&quot; height=&quot;60%&quot; /&gt;&lt;br /&gt;
+   &lt;img src=&quot;http://127.0.0.1:4000//images/2018-1211-ts.png&quot; height=&quot;60%&quot; /&gt;&lt;br /&gt;
    Fig.6 Time Series Plot of One Event&lt;br /&gt;
-   &lt;img src=&quot;https://chrimerss.github.io/homepage/images/2018-1211-cts.png&quot; height=&quot;60%&quot; /&gt;&lt;br /&gt;
+   &lt;img src=&quot;http://127.0.0.1:4000//images/2018-1211-cts.png&quot; height=&quot;60%&quot; /&gt;&lt;br /&gt;
    Fig.7 Cumulative Time Series Plot of One Event&lt;br /&gt;
    &lt;/p&gt;
 
@@ -685,7 +685,7 @@ P. Allamano, A. Croci, and F. Laio1 (2015) &lt;em&gt;Toward the camera rain gaug
 &lt;p&gt;a local server should be set up at port 8000, in your browser, enter in localhost:8000, then the interface will pop up as&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-   &lt;img src=&quot;https://chrimerss.github.io/homepage/images/capture_of_localhost.PNG&quot; align=&quot;center&quot; /&gt;&lt;br /&gt;
+   &lt;img src=&quot;http://127.0.0.1:4000//images/capture_of_localhost.PNG&quot; align=&quot;center&quot; /&gt;&lt;br /&gt;
    Fig.5 Snapshot of the local server
    &lt;/p&gt;
 
