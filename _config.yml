@@ -1,8 +1,8 @@
 # Site
 title: (Allen) Zhi Li
-description: Ph.D. candidate @ U of Oklahoma
+description: Research Assistant @ Hydrometeorology and Remote Sensing laboratory
 url: https://chrimerss.github.io/homepage
-#url: http://127.0.0.1:4000/
+# url: http://127.0.0.1:4000/
 logo: allen.png                                       # Site logo
 locale: en_US
 
@@ -39,7 +39,7 @@ github:             chrimerss
 linkedin:          Zhi Li
 Wechat:            chrimerss
 #xing:              username
-#instagram:          username
+instagram:          chrimerss
 #lastfm:            username
 #tumblr:            username
 #pinterest:         username

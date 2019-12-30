@@ -46,6 +46,15 @@ canvas {
   z-index: 0;
 }
 
+.hydro {
+//  position: absolute;
+ width: 100px;
+ height: 100px;
+ 
+&.active {
+  position: fixed;
+}
+}
 .projects-menu-icon {
   position: absolute;
   top: 30px;

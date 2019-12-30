@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.2">Jekyll</generator><link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000//" rel="alternate" type="text/html" /><updated>2019-08-20T21:04:11-05:00</updated><id>http://127.0.0.1:4000//</id><title>(Allen) Zhi Li</title><subtitle>Ph.D. candidate @ U of Oklahoma</subtitle><entry><title>Radar Project in Singapore</title><link href="http://127.0.0.1:4000//post-radar/" rel="alternate" type="text/html" title="Radar Project in Singapore" /><published>2019-05-03T00:00:00-05:00</published><updated>2019-05-03T00:00:00-05:00</updated><id>http://127.0.0.1:4000//post-radar</id><content type="html" xml:base="http://127.0.0.1:4000//post-radar/">&lt;h1 id=&quot;radar-project-in-singapore&quot;&gt;Radar Project in Singapore&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.2">Jekyll</generator><link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000//" rel="alternate" type="text/html" /><updated>2019-12-29T23:14:32-06:00</updated><id>http://127.0.0.1:4000//</id><title>(Allen) Zhi Li</title><subtitle>Research Assistant @ Hydrometeorology and Remote Sensing laboratory</subtitle><entry><title>Cross Evaluation of Uncertainties in Extreme Rainfall Events using Triple Collocation</title><link href="http://127.0.0.1:4000//post-TC/" rel="alternate" type="text/html" title="Cross Evaluation of Uncertainties in Extreme Rainfall Events using Triple Collocation" /><published>2019-12-28T00:00:00-06:00</published><updated>2019-12-28T00:00:00-06:00</updated><id>http://127.0.0.1:4000//post-TC</id><content type="html" xml:base="http://127.0.0.1:4000//post-TC/">&lt;h1 id=&quot;cross-evaluation-of-uncertainties-in-extreme-rainfall-events-using-triple-collocation&quot;&gt;Cross Evaluation of Uncertainties in Extreme Rainfall Events using Triple Collocation&lt;/h1&gt;
+
+&lt;h2 id=&quot;brief-introduction&quot;&gt;Brief Introduction&lt;/h2&gt;
+
+&lt;p&gt;Getting a better understanding of precipitation can benefit us to provide more accurate forcing data for hydrologic models. Towards the data explosion era, we have multi-sources of rainfall capturing devices, e.g., ground-based rain gauges, radars, microwave links, and satellites. On the other hand, how to utilize these multi-sources of data becomes a spot for researchers. In this context, Triple Collocation (TC) has been proven to be a powerful statistical tool to evaluate three independent dataset, and also been widely used in hydrometeorology. Since each data source suffer more uncertainties from extreme rainfall events, e.g., hurricane, tropical cyclones, and no other previous work focuses on evaluating the performance of the rainfall data, we can thus cooperate with TC method as a tool to perform such analysis.&lt;/p&gt;
+
+&lt;h2 id=&quot;data-description&quot;&gt;Data Description&lt;/h2&gt;
+
+&lt;p&gt;The three independent data been used in our study involve: (a) &lt;a href=&quot;https://data.eol.ucar.edu/dataset/21.088.&quot;&gt;National Center for Environmental Prediction (NCEP) 4km-gridded-gauge-only product&lt;/a&gt;. (b) &lt;a href=&quot;http://mtarchive.geol.iastate.edu/&quot;&gt;Multi-Radar Multi-Sensor (MRMS) radar-only QPE&lt;/a&gt;. (c) &lt;a href=&quot;https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGHH_06/summary?keywords=IMERG&quot;&gt;Integrated Multi-satellitE Rainfall retrieval for GPM (IMERG) V06B Final w/o calibration product&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We collected four extreme rainfall events include: (a) Hurricane Harvey (2017); (b) Storm Bill (2015); (c) Storm Cindy (2017); (d) Storm Imelda (2019).&lt;/p&gt;
+
+&lt;h2 id=&quot;study-domain&quot;&gt;Study domain&lt;/h2&gt;
+
+&lt;p&gt;In our study, we analyzed the rainfall field in the most impacted area by Hurricane Harvey and coincidently, these four events share the anagulous impacted area, which provides a testbed for performing different scales of analysis.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt; &lt;img src=&quot;http://127.0.0.1:4000//images/TC/domain.png&quot; /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt; Fig.1 Study domain&lt;/p&gt;
+
+&lt;h2 id=&quot;results&quot;&gt;Results&lt;/h2&gt;
+
+&lt;p&gt;In the results, we present from an overview and then seperate Harvey with special concern because of its severity, and at last, the core region of Harvey is disaggregated to specifically analyze the performance.&lt;/p&gt;
+
+&lt;h3 id=&quot;overall-behavior&quot;&gt;Overall behavior&lt;/h3&gt;
+
+&lt;p&gt;In Fig.2, it illustrates the rainfall field captured by different products for the four events cancatenanted together. MRMS captures the most rainfall.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt; &lt;img src=&quot;http://127.0.0.1:4000//images/TC/total.png&quot; /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt; Fig.2 Total rainfall field for three scales and products.&lt;/p&gt;
+
+&lt;p&gt;In Fig.3, it shows the TC results for each product and three cases. From the results, we found MRMS always exhibites less uncertainties than the other two, and follows IMERG, NCEP.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt; &lt;img src=&quot;http://127.0.0.1:4000//images/TC/rmse+cc.png&quot; /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt; Fig.3 RMSE and CC (by TC) for three scales and products.&lt;/p&gt;
+
+&lt;h3 id=&quot;hurricane-harvey&quot;&gt;Hurricane Harvey&lt;/h3&gt;
+
+&lt;p&gt;In Harvey case, we present the evolution of TC results as rainfall amount in Fig. 4. Thus, we can observe that MRMS is the most stable and robust one; IMERG experences higher uncertainty in the lower range and NCEP is always lower than the other two.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt; &lt;img src=&quot;http://127.0.0.1:4000//images/TC/dynamicRange.png&quot; /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt; Fig.4 RMSE and CC (by TC) changes with rainfall amount.&lt;/p&gt;
+
+&lt;h3 id=&quot;harvey-core&quot;&gt;Harvey core&lt;/h3&gt;
+
+&lt;p&gt;To emphasize on more severe regions, we seperate the core region based on the 400 mm rainfall isoline (apx.60mm/day), and the boxplot of RMSE and CC for each isolated region is in Fig.5. metrics in core region gets some amounts of improvement except for NCEP because it filters out noises caused by limited rainy samples and logarithmic transform of little rainfall. NCEP improvement is superseded by the degradation of the fate of gauge-based observations e.g., wind-undercatching, splash of water etc.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt; &lt;img src=&quot;http://127.0.0.1:4000//images/TC/box_plot_stats_zone.png&quot; /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt; Fig.5 RMSE and CC (by TC) within three different domains.&lt;/p&gt;
+
+&lt;p&gt;To figure out why NCEP performance degrades in the core region, the time series plot unveils the answer as in Fig.6 because the grey window highlights when NCEP stop recording data while the other two observations continuously record. And also the other two devices have some deficiencies. For instance, MRMS have some anamalous signals in red window, and IMERG cuts off at 60 mm/hour due to its inherent sensor limitations.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt; &lt;img src=&quot;http://127.0.0.1:4000//images/TC/ts.png&quot; /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt; Fig.6 Time series plot of five selected pixels.&lt;/p&gt;</content><category term="Statistics" /><category term="precipitation" /><category term="hydrometeorology" /><summary>Cross Evaluation of Uncertainties in Extreme Rainfall Events using Triple Collocation</summary></entry><entry><title>Radar Project in Singapore</title><link href="http://127.0.0.1:4000//post-radar/" rel="alternate" type="text/html" title="Radar Project in Singapore" /><published>2019-05-03T00:00:00-05:00</published><updated>2019-05-03T00:00:00-05:00</updated><id>http://127.0.0.1:4000//post-radar</id><content type="html" xml:base="http://127.0.0.1:4000//post-radar/">&lt;h1 id=&quot;radar-project-in-singapore&quot;&gt;Radar Project in Singapore&lt;/h1&gt;
 
 &lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
 
