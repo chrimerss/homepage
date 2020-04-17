@@ -19,6 +19,9 @@
 <loc>http://127.0.0.1:4000//posts.html</loc>
 </url>
 <url>
+<loc>http://127.0.0.1:4000//publications.html</loc>
+</url>
+<url>
 <loc>http://127.0.0.1:4000//tags.html</loc>
 </url>
 </urlset>
