@@ -1,5 +1,5 @@
 - title: Rainfall Camera
-  url: https://chrimerss.github.io/post-camera/
+  url: http://smartallen.me/post-camera/
   image: images/camera.jpg
   completed: true
 
@@ -9,12 +9,12 @@
   completed: true
 
 - title: Triple Collocation
-  url: https://chrimerss.github.io/post-TC/
+  url: http://smartallen.me/post-TC/
   image: images/TC/domain.png
   completed: true
 
 - title: Satellite Precipitation
-  url: https://chrimerss.github.io/post-AMSU/
+  url: http://smartallen.me/post-AMSU/
   image: images/AMSU/crosstrack_scanners.gif
   completed: true
 
