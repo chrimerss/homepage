@@ -1,7 +1,7 @@
 - title: Rainfall Camera
-  url: https://github.com/chrimerss/RainfallCamera
+  url: https://chrimerss.github.io//post-camera/
   image: images/camera.jpg
-  completed: false
+  completed: true
 
 - title: Rainfall Radar
   url: http://www.h2i.sg/radar-rainfall-monitoring-and-nowcasting-system-for-urban-flood-management-in-singapore
@@ -12,3 +12,12 @@
   url: https://chrimerss.github.io//post-TC/
   image: images/TC/domain.png
   completed: true
+
+- title: Satellite Precipitation
+  url: https://chrimerss.github.io//post-AMSU/
+  image: images/AMSU/crosstrack_scanners.gif
+  completed: true
+
+- title: Flood simulation
+  image: images/flood/animation_resize.gif
+  completed: false

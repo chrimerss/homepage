@@ -16,29 +16,29 @@ tags:
 
 ## Contents
 
-### 1. [Introduction](#introduction)  
+### 1. [Introduction](#introduction)
 
-#### 1.1 [Background](#background) 
+#### 1.1 [Background](#background)
 
-#### 1.2 [Radar Information](#info)  
+#### 1.2 [Radar Information](#info)
 
-### 2. [Radar Observation](#observation)  
+### 2. [Radar Observation](#observation)
 
-#### 2.1 [Z-R relationship](#z-r)  
+#### 2.1 [Z-R relationship](#z-r)
 
-#### 2.2 [Image Integration](#img_inte)  
+#### 2.2 [Image Integration](#img_inte)
 
-### 3. [Radar Nowcast](#nowcast)  
+### 3. [Radar Nowcast](#nowcast)
 
-#### 3.1 [Convection](#convection)  
+#### 3.1 [Convection](#convection)
 
-#### 3.2 [Growth and Decay](#growthdecay)  
+#### 3.2 [Growth and Decay](#growthdecay)
 
-#### 3.3 [Memory Integration](#memo)  
+#### 3.3 [Memory Integration](#memo)
 
-### 4. [Radar Improvement](#improvement)  
+### 4. [Radar Improvement](#improvement)
 
-### 5. [Miscellaneous](#misc)  
+### 5. [Miscellaneous](#misc)
 
 
 ## _Introduction_<a name="introduction"></a>
@@ -193,26 +193,26 @@ Another technique here we discovered is that, these statistics are better during
 
 #### Radar Image Comparison
 
-1. Probability of Detection (POD)  
+1. Probability of Detection (POD)
 <p align="center">
  POD= \frac{a,a+b}
-</p>  
+</p>
 Where a is the number of grid cells where rain occurred and they were successful predicted as rain cells by the nowcasting model; and b is the number of grid cells where rain occurred but they were not predicted by the nowcasting model. What is marked as ‘rain’ and what as ‘no rain’ is determined using a particular threshold Z. The threshold is used because the measured radar data can have clutter and noise which can produce spurious values at low intensities. The threshold is set at Z = 0.5 mm/hr. This means that whenever rainfall is measured above this threshold it will be marked as an ‘rain’; otherwise as ‘no rain’.
 
 <table style="width:40%" align="center">
   <tr>
     <th>Measurement</th>
-    <th>Forecast rain</th> 
+    <th>Forecast rain</th>
     <th>Forecast no-rain</th>
   </tr>
   <tr>
     <td>Rain</td>
-    <td>a</td> 
+    <td>a</td>
     <td>b</td>
   </tr>
   <tr>
     <td>no-rain</td>
-    <td>c</td> 
+    <td>c</td>
     <td>d</td>
   </tr>
 </table>
@@ -223,11 +223,11 @@ Where a is the number of grid cells where rain occurred and they were successful
 </figure>
 
 
-2. False Alarm Rate(FAR)  
+2. False Alarm Rate(FAR)
 <p align="center">
  FAR= \frac{c,a+c}
-</p>   
-where the a,c has the same meaning as before.  
+</p>
+where the a,c has the same meaning as before.
 This indicates the probability of producing false signal.
 
 <figure style="width:60%" class="align-center">
@@ -235,10 +235,10 @@ This indicates the probability of producing false signal.
 <figcaption>Fig.7 FAR for 30 mins lead time</figcaption>
 </figure>
 
-3. Critical Success Index (CSI)  
+3. Critical Success Index (CSI)
 <p align="center">
 CSI=\frac{a, a+b+c}
-</p>    
+</p>
 where the a,b,c has the same meaning as before.
 
 <figure style="width:60%" class="align-center">

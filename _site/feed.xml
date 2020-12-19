@@ -1,4 +1,122 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.2">Jekyll</generator><link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000//" rel="alternate" type="text/html" /><updated>2020-04-17T16:05:11-05:00</updated><id>http://127.0.0.1:4000//</id><title>(Allen) Zhi Li</title><subtitle>Research Assistant @ Hydrometeorology and Remote Sensing laboratory</subtitle><entry><title>Cross Evaluation of Uncertainties in Extreme Rainfall Events using Triple Collocation</title><link href="http://127.0.0.1:4000//post-TC/" rel="alternate" type="text/html" title="Cross Evaluation of Uncertainties in Extreme Rainfall Events using Triple Collocation" /><published>2019-12-28T00:00:00-06:00</published><updated>2019-12-28T00:00:00-06:00</updated><id>http://127.0.0.1:4000//post-TC</id><content type="html" xml:base="http://127.0.0.1:4000//post-TC/">&lt;h1 id=&quot;cross-evaluation-of-uncertainties-in-extreme-rainfall-events-using-triple-collocation&quot;&gt;Cross Evaluation of Uncertainties in Extreme Rainfall Events using Triple Collocation&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.2">Jekyll</generator><link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/atom+xml" /><link href="http://127.0.0.1:4000//" rel="alternate" type="text/html" /><updated>2020-12-18T20:54:43-06:00</updated><id>http://127.0.0.1:4000//</id><title>(Allen) Zhi Li</title><subtitle>Research Assistant @ Hydrometeorology and Remote Sensing laboratory</subtitle><entry><title>Advancing satellite precipitation retrievals with data driven approaches: is black box model explainable?</title><link href="http://127.0.0.1:4000//post-AMSU/" rel="alternate" type="text/html" title="Advancing satellite precipitation retrievals with data driven approaches: is black box model explainable?" /><published>2020-12-18T00:00:00-06:00</published><updated>2020-12-18T00:00:00-06:00</updated><id>http://127.0.0.1:4000//post-AMSU</id><content type="html" xml:base="http://127.0.0.1:4000//post-AMSU/">&lt;h1 id=&quot;advancing-satellite-precipitation-retrievals-with-data-driven-approaches-is-black-box-model-explainable&quot;&gt;Advancing satellite precipitation retrievals with data driven approaches: is black box model explainable?&lt;/h1&gt;
+
+&lt;h2 id=&quot;contents&quot;&gt;Contents&lt;/h2&gt;
+
+&lt;h3 id=&quot;introductionintroduction&quot;&gt;1. &lt;a href=&quot;#introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;amsuamsu&quot;&gt;1.1 &lt;a href=&quot;#amsu&quot;&gt;AMSU&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;precipitation-retrievalretrieval&quot;&gt;1.2 &lt;a href=&quot;#retrieval&quot;&gt;Precipitation retrieval&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h3 id=&quot;experiment-designexperiment&quot;&gt;2. &lt;a href=&quot;#experiment&quot;&gt;Experiment design&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;resultsresults&quot;&gt;3. &lt;a href=&quot;#results&quot;&gt;Results&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;precipitation-classificationclassification&quot;&gt;3.1 &lt;a href=&quot;#classification&quot;&gt;Precipitation classification&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;precipitation-quantificationquantification&quot;&gt;3.2 &lt;a href=&quot;#quantification&quot;&gt;Precipitation quantification&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;case-studycase&quot;&gt;3.3 &lt;a href=&quot;#case&quot;&gt;Case study&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h3 id=&quot;findingsfinding&quot;&gt;4. &lt;a href=&quot;#finding&quot;&gt;Findings&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h2 id=&quot;introductiona-nameintroductiona&quot;&gt;&lt;em&gt;Introduction&lt;/em&gt;&lt;a name=&quot;introduction&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;As we know, remote sensing satellite provides an unprohibitive scan across the globe. It is advantageous to incorporate
+more satellite information to retrieve ground precipitation.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;https://github.com/chrimerss/AMSU-MRMS/blob/master/src/polar_orbit.gif?raw=true&quot; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&quot;amsua-nameamsua&quot;&gt;&lt;strong&gt;AMSU&lt;/strong&gt;&lt;a name=&quot;amsu&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;AMSU stands for Advanced Microwave Sounding Unit, onboard NOAA satellites. It was initially lanched in 1998, but there are subsequent missions. AMSU is a sounding
+satellite, which is primarily designed to measure vertical atmospheric temperature to understand storm characteristics. But as an additional benefit, it can
+also be used to retrieve precipitation rate based on its multi-band information. Previous attempts on precipitation retrievals were not very suscessful. For instance,
+ the NOAA operational platform which uses old version of GPROF to approximate rainfall rate fail to give a resonable estimates. I guess that is why in GPM IMERG,
+ AMSU is no longer used from satellite constellations.&lt;/p&gt;
+
+&lt;p&gt;In this study, we want to explore the capacity of precipitation estimation of AMSU with some data-driven approach, and more importantly, is the black box model can be
+ explained? If so, what can we use it to innovate or broaden our understanding of satellite precipitation.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;../images/AMSU/crosstrack_scanners.gif&quot; /&gt;
+Animation of AMSU cross-scan
+&lt;/p&gt;
+
+&lt;p&gt;Deficiencies of current AMSU-based algorithm are summarized as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;BT-RR relationship is not precise (see Fig.1). In light rain, brightness temperature literally spans from 15 to 30K.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“Parallax effect” means the vertical disalignment.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;https://github.com/chrimerss/AMSU-MRMS/blob/master/src/variance_rain_rate_sort.png?raw=true&quot; /&gt;
+Fig.1 BT-RR scatter plot
+&lt;/p&gt;
+
+&lt;h3 id=&quot;precipitation-retrievala-nameretrievala&quot;&gt;&lt;strong&gt;Precipitation retrieval&lt;/strong&gt;&lt;a name=&quot;retrieval&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;We innovate the precipitation retrievals with deep learning approaches. In this case, we adopt the LinkNet structure because it is light-weight and effective.
+The LinkNet structure is as follows. the CNN-based model takes care of parallax effects because the spatial structure is reserved, let alone the encoding-decoding
+ structure.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;https://github.com/chrimerss/AMSU-MRMS/blob/master/src/LinkNet-architecture.png?raw=true&quot; height=&quot;60%&quot; /&gt;
+Fig.2 LinkNet model structure
+&lt;/p&gt;
+
+&lt;h2 id=&quot;experiment-designa-nameexperimenta&quot;&gt;&lt;strong&gt;Experiment design&lt;/strong&gt;&lt;a name=&quot;experiment&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;In our study, we select eight frequencies in AMSU which could best capture precipitation from all aspects (light, medium, and large). These eight raw data undergo
+ LinkNet to first predict precipitaiton type because we want to make corresponding prediction of rates based on type (i.e., different types have totally different rates)
+ and then each type of precipitation will be mapped by random forest taking BT as well as ancillary data (i.e., eight neighboring celss, surface types, DEM, azimuthal angle, and diurnals)
+ After that, the rainfall rate is utimately produced. All the results are contrasted against NSSL MRMS radar product.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;../images/AMSU/model_structure.png&quot; height=&quot;60%&quot; /&gt;
+Fig.3 Processing Framework
+&lt;/p&gt;
+
+&lt;h2 id=&quot;resultsa-nameresultsa&quot;&gt;&lt;strong&gt;Results&lt;/strong&gt;&lt;a name=&quot;results&quot;&gt;&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Here, we present some of the results of our model, compared to benchmark (operational system) in terms of classification, quantification, and two case studies.&lt;/p&gt;
+
+&lt;h3 id=&quot;precipitation-classificationa-nameclassificationa&quot;&gt;Precipitation classification&lt;a name=&quot;classification&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;../images/AMSU/classification.png&quot; height=&quot;60%&quot; /&gt;
+Fig.4 Classification results
+&lt;/p&gt;
+
+&lt;h3 id=&quot;precipitation-quantificationa-namequantificationa&quot;&gt;Precipitation Quantification&lt;a name=&quot;quantification&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;../images/AMSU/quantification.png&quot; height=&quot;100%&quot; /&gt;
+Fig.5 Quantification results
+&lt;/p&gt;
+
+&lt;h3 id=&quot;case-studya-namecasea&quot;&gt;Case study&lt;a name=&quot;case&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;CASE 1&lt;/strong&gt;: convective storm&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;../images/AMSU/case1.png&quot; height=&quot;60%&quot; /&gt;
+Fig.5 Case 1
+&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;CASE 2&lt;/strong&gt;: North American Blizzard&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;../images/AMSU/case2.png&quot; height=&quot;60%&quot; /&gt;
+Fig.6 Case 2
+&lt;/p&gt;</content><category term="Statistics" /><category term="satellite" /><category term="precipitation" /><summary>Advancing satellite precipitation retrievals with data driven approaches: is black box model explainable?</summary></entry><entry><title>Cross Evaluation of Uncertainties in Extreme Rainfall Events using Triple Collocation</title><link href="http://127.0.0.1:4000//post-TC/" rel="alternate" type="text/html" title="Cross Evaluation of Uncertainties in Extreme Rainfall Events using Triple Collocation" /><published>2019-12-28T00:00:00-06:00</published><updated>2019-12-28T00:00:00-06:00</updated><id>http://127.0.0.1:4000//post-TC</id><content type="html" xml:base="http://127.0.0.1:4000//post-TC/">&lt;h1 id=&quot;cross-evaluation-of-uncertainties-in-extreme-rainfall-events-using-triple-collocation&quot;&gt;Cross Evaluation of Uncertainties in Extreme Rainfall Events using Triple Collocation&lt;/h1&gt;
 
 &lt;h2 id=&quot;brief-introduction&quot;&gt;Brief Introduction&lt;/h2&gt;
 
@@ -248,17 +366,17 @@ F_{T+i}^j=(C_i^1G_T^j+C_i^2R_T^j)/R_T^j
 &lt;table style=&quot;width:40%&quot; align=&quot;center&quot;&gt;
   &lt;tr&gt;
     &lt;th&gt;Measurement&lt;/th&gt;
-    &lt;th&gt;Forecast rain&lt;/th&gt; 
+    &lt;th&gt;Forecast rain&lt;/th&gt;
     &lt;th&gt;Forecast no-rain&lt;/th&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
     &lt;td&gt;Rain&lt;/td&gt;
-    &lt;td&gt;a&lt;/td&gt; 
+    &lt;td&gt;a&lt;/td&gt;
     &lt;td&gt;b&lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
     &lt;td&gt;no-rain&lt;/td&gt;
-    &lt;td&gt;c&lt;/td&gt; 
+    &lt;td&gt;c&lt;/td&gt;
     &lt;td&gt;d&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;
@@ -274,7 +392,7 @@ F_{T+i}^j=(C_i^1G_T^j+C_i^2R_T^j)/R_T^j
 &lt;p align=&quot;center&quot;&gt;
  FAR= \frac{c,a+c}
 &lt;/p&gt;
-&lt;p&gt;where the a,c has the same meaning as before.&lt;br /&gt;
+&lt;p&gt;where the a,c has the same meaning as before.
 This indicates the probability of producing false signal.&lt;/p&gt;
 
 &lt;figure style=&quot;width:60%&quot; class=&quot;align-center&quot;&gt;
@@ -491,17 +609,17 @@ Where a is the number of grid cells where rain occurred and they were successful
 
   
     Measurement
-    Forecast rain 
+    Forecast rain
     Forecast no-rain
   
   
     Rain
-    a 
+    a
     b
   
   
     no-rain
-    c 
+    c
     d
   
 
