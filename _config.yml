@@ -8,7 +8,7 @@ locale: en_US
 
 # Left Block Images
 background:
-  homepage: images/photo.jpg                          # this image will be shown on homepage's left block
+  homepage: images/GOES.jpg                          # this image will be shown on homepage's left block
   post-list: images/unsplash-image-10.jpg             # this image will be shown on post list page
   default-post: images/unsplash-gallery-image-3.jpg   # this image will be shown when post's front matter doesn't specify any image
 
@@ -40,13 +40,14 @@ linkedin:          Zhi Li
 scholar:            Zhi Li
 #xing:              username
 instagram:          chrimerss
+researchgate:       Zhi Li
 #lastfm:            username
 #tumblr:            username
 #pinterest:         username
 #foursquare:        username
 #steam:              username
 #dribbble:          username
-#youtube:           username
+#youtube:           Allen Li
 #soundcloud:        username
 #weibo:             username
 #flickr:            username
