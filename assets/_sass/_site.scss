@@ -1,3 +1,16 @@
+.social-btn img {
+  display: none;
+  position: relative;
+  left: 0px;
+  top:0px;
+  width:200px;
+  height:200px;
+}
+
+.social-btn:hover img{
+  display:inherit;
+}
+
 .block-left {
   float: left;
   .content {
