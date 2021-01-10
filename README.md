@@ -12,5 +12,5 @@ rvm use ruby-2.6.0
 2. run in local host
 
 ```bash
-jekyll run serve --watch
+bundle exec jekyll run serve --watch
 ```
