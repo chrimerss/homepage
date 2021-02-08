@@ -13,16 +13,18 @@
 
 .block-left {
   float: left;
+
   .content {
     z-index: 1;
     position: relative;
-    float:middle
+    float:middle;
+
   }
 }
 
 .block-right {
   float: right;
-  overflow-y: auto;
+  overflow: scroll;
   .content {
   max-width:1000px;
   }
@@ -39,7 +41,7 @@
     vertical-align: middle;
   }
   .content {
-    height: 100%;
+height: 100%;
   }
 }
 
@@ -528,7 +530,7 @@ canvas {
 }
 
 #posts {
-
+  overflow:scroll;
   .post-block {
     display: block;
     .content {
@@ -837,7 +839,7 @@ canvas {
     overflow: auto;
   }
   .block-right {
-    overflow-y: inherit;
+    overflow-y: scroll;
   }
   .projects-menu li {
     width: 50% !important;
