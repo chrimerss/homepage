@@ -19,5 +19,6 @@
   completed: true
 
 - title: Flood simulation
+  url: https://chrimerss.users.earthengine.app/view/floodcollections
   image: images/flood/animation_resize.gif
-  completed: false
+  completed: true
